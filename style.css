@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.slider .container {
+    white-space: nowrap;
+    position: relative;
+    transition: all 0.3s;
+}
+.slider .container * {
+    white-space: normal ;
+}
+
+
+.slider {
+    width: 100vw;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+}
+
+.slider img {
+    width: 100%;
+    display: inline-block;
+    margin-right:-4px;   
+}
