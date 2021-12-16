@@ -1,28 +1,52 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .slider .container {
-    white-space: nowrap;
-    position: relative;
-    transition: all 0.3s;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.3s;
 }
 .slider .container * {
-    white-space: normal ;
+  white-space: normal;
 }
 
-
 .slider {
-    width: 100vw;
-    background-position: top;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    left: 0;
+  width: 100vw;
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  left: 0;
 }
 
 .slider img {
-    width: 100%;
-    display: inline-block;
-    margin-right:-4px;   
+  width: 100%;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.slider .controls ul {
+  bottom: 1em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.slider .controls li {
+  list-style: none;
+  background-color: rgba(31, 31, 31, 0.568);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider .controls li.active {
+  background-color: aqua;
 }
